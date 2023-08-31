@@ -1,0 +1,4 @@
+.content {
+    display: grid;
+    grid: repeat(3, 1fr) / repeat(3, 1fr);
+}
