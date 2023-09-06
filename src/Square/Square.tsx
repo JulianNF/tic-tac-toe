@@ -1,16 +1,15 @@
-import { MouseEventHandler } from 'react';
-import styles from './Square.module.scss';
+import './Square.scss';
 import { AllowedValues } from '../interfaces/interfaces';
 
-function Square({
-    value,
-    onSquareClick,
-}: {
+interface SquareProps {
+    index: number;
     value: AllowedValues;
-    onSquareClick: MouseEventHandler<HTMLButtonElement>;
-}) {
+    onSquareClick: (index: number) => void;
+}
+
+function Square({ index, value, onSquareClick }: SquareProps) {
     return (
-        <button className={styles.content} onClick={onSquareClick}>
+        <button className="square" onClick={() => onSquareClick(index)}>
             {value}
         </button>
     );

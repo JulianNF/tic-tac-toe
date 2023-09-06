@@ -1,0 +1,39 @@
+// Base colors:
+$white: #fbfbfb;
+$black: #1a1a1a;
+
+// Dark theme:
+$dark-text-color: rgba(241, 242, 250, 0.87);
+$dark-game__background-color: #242424;
+$dark-board__background-color: $black;
+
+$dark-btn__background-color: $black;
+$dark-btn__border-color: rgba($white, 15%);
+$dark-btn__border-color--hover: #646cff;
+$dark-btn__border-color--disabled: rgba($white, 10%);
+$dark-btn__shadow-color: rgba($white, 90%);
+$dark-btn__shadow-color--disabled: rgba($white, 15%);
+
+$dark-svg__fill-color: rgba($white, 90%);
+$dark-svg__fill-color--disabled: rgba($white, 30%);
+
+$dark-square__background-color: rgba(70, 70, 70, 100%);
+$dark-square__background-color--hover: rgba(50, 50, 50, 100%);
+
+// Light theme:
+$light-text-color: #213547;
+$light-game__background-color: #ffffff;
+$light-board__background-color: $black;
+
+$light-btn__background-color: $white;
+$light-btn__border-color: rgba($black, 15%);
+$light-btn__border-color--hover: #646cff;
+$light-btn__border-color--disabled: rgba($black, 10%);
+$light-btn__shadow-color: rgba($black, 90%);
+$light-btn__shadow-color--disabled: rgba($black, 15%);
+
+$light-svg__fill-color: rgba($black, 90%);
+$light-svg__fill-color--disabled: rgba($black, 30%);
+
+$light-square__background-color: rgba(240, 240, 240, 100%);
+$light-square__background-color--hover: rgba(230, 230, 230, 100%);

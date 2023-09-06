@@ -1,0 +1,15 @@
+@import '../assets/styles/app-palette.scss';
+
+.board {
+    margin: auto;
+    display: grid;
+    gap: 0.2rem;
+    background-color: $dark-board__background-color;
+    grid: repeat(3, 1fr) / repeat(3, 1fr);
+}
+
+@media (prefers-color-scheme: light) {
+    .board {
+        background-color: $light-board__background-color;
+    }
+}

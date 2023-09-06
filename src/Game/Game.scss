@@ -1,0 +1,77 @@
+@import '../assets/styles/app-palette.scss';
+
+.game {
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.toolbar {
+    padding-top: 1.5rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+
+    button {
+        padding: 0.5em 1em;
+        border-radius: 8px;
+        border: 1px solid $dark-btn__border-color;
+        background-color: $dark-btn__background-color;
+        cursor: pointer;
+        transition: border-color 0.25s;
+
+        svg {
+            fill: $dark-svg__fill-color;
+        }
+
+        &:hover {
+            border-color: $dark-btn__border-color--hover;
+            box-shadow: 0 0 5px $dark-btn__shadow-color;
+
+            &:disabled {
+                box-shadow: 0 0 3px $dark-btn__shadow-color--disabled;
+                cursor: no-drop;
+            }
+        }
+
+        &:disabled {
+            border-color: $dark-btn__border-color--disabled;
+            svg {
+                fill: $dark-svg__fill-color__disabled;
+            }
+        }
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    .toolbar {
+        button {
+            border: 1px solid $light-btn__border-color;
+            background-color: $light-btn__background-color;
+
+            svg {
+                fill: $light-svg__fill-color;
+            }
+
+            &:hover {
+                border-color: $light-btn__border-color--hover;
+                box-shadow: 0 0 5px $light-btn__shadow-color;
+
+                &:disabled {
+                    box-shadow: 0 0 3px $light-btn__shadow-color--disabled;
+                }
+            }
+
+            &:disabled {
+                border-color: $light-btn__border-color--disabled;
+                svg {
+                    fill: $light-svg__fill-color__disabled;
+                }
+            }
+        }
+    }
+}

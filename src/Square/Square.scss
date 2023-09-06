@@ -1,0 +1,25 @@
+@import '../assets/styles/app-palette.scss';
+
+.square {
+    width: 4rem;
+    height: 4rem;
+    font-size: 2rem;
+    color: inherit;
+    background-color: $dark-square__background-color;
+    border: none;
+
+    &:hover {
+        background-color: $dark-square__background-color--hover;
+        cursor: pointer;
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    .square {
+        background-color: $light-square__background-color;
+
+        &:hover {
+            background-color: $light-square__background-color--hover;
+        }
+    }
+}
