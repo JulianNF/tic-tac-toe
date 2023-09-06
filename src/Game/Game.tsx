@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { ReactElement, useState } from 'react';
 import './Game.scss';
 import Board from '../Board';
 import { AllowedValues, Players } from '../interfaces/interfaces';
@@ -6,7 +6,7 @@ import { UndoIcon } from '../assets/images/UndoIcon';
 import { RedoIcon } from '../assets/images/RedoIcon';
 import { RestartIcon } from '../assets/images/RestartIcon';
 
-function Game() {
+function Game(): ReactElement {
     const [currentPlayer, setCurrentPlayer] = useState<Players>('X');
     const [squares, setSquares] = useState<AllowedValues[]>(
         Array(9).fill(null)

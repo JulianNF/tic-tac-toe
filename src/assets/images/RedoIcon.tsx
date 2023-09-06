@@ -1,4 +1,6 @@
-export function RedoIcon() {
+import { ReactElement } from 'react';
+
+export function RedoIcon(): ReactElement {
     return (
         <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -6,6 +8,7 @@ export function RedoIcon() {
             viewBox="0 -960 960 960"
             width="24"
         >
+            <title>Redo move</title>
             <path
                 fill="current"
                 stroke="current"

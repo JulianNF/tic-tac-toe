@@ -1,9 +1,9 @@
 {
     "name": "tic-tac-toe",
     "private": true,
-    "version": "1.0.1",
+    "version": "1.0.2",
     "type": "module",
-    "description": "A heavily modified version of the official React tic-tact-toe tutorial: https://react.dev/learn/tutorial-tic-tac-toe, including the addition of TS, styling, separate components, and assets.",
+    "description": "A heavily modified version of the official React tic-tac-toe tutorial: https://react.dev/learn/tutorial-tic-tac-toe, including the use of Vite, TypeScript, SCSS styling, separate components, assets, and SVG components",
     "scripts": {
         "dev": "vite",
         "build": "tsc && vite build",

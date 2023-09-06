@@ -1,5 +1,6 @@
 import './Square.scss';
 import { AllowedValues } from '../interfaces/interfaces';
+import { ReactElement } from 'react';
 
 interface SquareProps {
     index: number;
@@ -7,7 +8,7 @@ interface SquareProps {
     onSquareClick: (index: number) => void;
 }
 
-function Square({ index, value, onSquareClick }: SquareProps) {
+function Square({ index, value, onSquareClick }: SquareProps): ReactElement {
     return (
         <button className="square" onClick={() => onSquareClick(index)}>
             {value}

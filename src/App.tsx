@@ -1,6 +1,7 @@
+import { ReactElement } from 'react';
 import Game from './Game';
 
-function App() {
+function App(): ReactElement {
     return <Game />;
 }
 

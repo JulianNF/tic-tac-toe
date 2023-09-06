@@ -1,27 +1,19 @@
-# React + TypeScript + Vite
+# A deeper implementation of the official React tic-tac-toe tutorial
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+React offers a nice [Quickstart Tutorial: Tic-Tac-Toe](https://react.dev/learn/tutorial-tic-tac-toe) that I built as a refresher activity for myself, as I've been building in Angular for the last 3 years, and hadn't built anything using React in 4 years.
 
-Currently, two official plugins are available:
+I diverged from the tutorial by:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+-   Using Vite
+-   Using TypeScript
+-   Breaking my components into separate folders
+    -   Implementing `index.tsx` files for cleaner imports on each of these component folders
+    -   Implementing a separate Interface module for reuse across all components
+-   Using SCSS
+    -   Messing around with creating a global `app-palette.scss` file to hold all color variables
+-   Using slightly different logic for storing state for the undo/redo portion of the tutorial
+-   Using SVG icons as React components
 
-## Expanding the ESLint configuration
+## Tooling
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+Built using React, TypeScript, SCSS, and Vite.
